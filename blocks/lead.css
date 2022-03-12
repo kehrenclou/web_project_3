@@ -1,0 +1,29 @@
+.lead {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 90px;
+}
+.lead__title {
+  width: 793px;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  /* or 104% */
+  text-align: center;
+  margin: 0%;
+}
+.lead__subtitle {
+  width: 720px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  /* or 120% */
+  text-align: center;
+  margin: 32px 0 0;
+}
+.lead__image {
+  margin-top: 64px;
+  /*do we need the 984 x 615 as it is already that size by default?*/
+}

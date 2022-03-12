@@ -1,0 +1,38 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  margin-left: 148px;
+  margin-top: 92px;
+}
+.intro__title {
+  max-width: 785px;
+  margin: 0;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  /* or 107% */
+}
+.intro__quote {
+  max-width: 720px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  /* or 142% */
+  margin: 40px 0 0 0;
+}
+.intro__quote_author {
+  position: relative;
+  text-align: right; /* still not aligning correctly*/
+  margin: 10px 0 0 0;
+  line-height: 34px;
+}
+.intro__content {
+  max-width: 720px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 26px */
+  margin: 32px 0 0 0;
+}
