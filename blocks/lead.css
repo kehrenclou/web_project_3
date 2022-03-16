@@ -1,29 +1,81 @@
 .lead {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin-top: 90px;
 }
 .lead__title {
-  width: 793px;
+  max-width: 793px;
   font-weight: 900;
   font-size: 96px;
-  line-height: 100px;
-  /* or 104% */
+  line-height: 1.04;
+  /* or 104% or 100px*/
   text-align: center;
   margin: 0%;
 }
 .lead__subtitle {
-  width: 720px;
+  max-width: 720px;
   font-weight: 400;
   font-size: 30px;
-  line-height: 36px;
-  /* or 120% */
+  line-height: 1.2;
+  /* or 120% 36px*/
   text-align: center;
   margin: 32px 0 0;
 }
 .lead__image {
   margin-top: 64px;
+  max-width: 100%;
   /*do we need the 984 x 615 as it is already that size by default?*/
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .lead__title {
+    max-width: 720px;
+    padding: 0 3.1% 0;
+  }
+  .lead__subtitle {
+    margin: 24px 0 0;
+    padding: 0 3.1% 0;
+  }
+  .lead__image {
+    margin-top: 36px;
+ 
+
+    /*?how to keep image at 100% to next break point breaks around 490*/
+  }
+}
+@media screen and (max-width: 570px) {/*check this is needed*/
+    .lead__title {
+        /* max-width: 288px; */
+        font-size: 65px; /*guessing font mid size*/
+        line-height: 1.1;
+      }
+      .lead__subtitle {
+        /* width: 288px; */
+        font-size: 24px;/*guessing mid point font size*/
+        /* margin: 16px 0 0; */
+      }
+    
+}
+
+@media screen and (max-width: 320px) {
+  .lead {
+    margin-top: 50px;
+    padding: 0 5% 0;
+  }
+  .lead__title {
+    max-width: 288px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+  .lead__subtitle {
+    width: 288px;
+    font-size: 16px;
+    margin: 16px 0 0;
+  }
+  .lead__image {
+    margin-top: 40px;
+   
 }
