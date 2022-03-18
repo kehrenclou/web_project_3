@@ -1,6 +1,6 @@
 .intro {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   border: 1px solid red;
 
   /* align-items: center; */
@@ -30,9 +30,6 @@
   position: relative;
   text-align: right; /* still not aligning correctly*/
   margin: 10px 0 0 0;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.42;
 }
 .intro__content {
   max-width: 720px;

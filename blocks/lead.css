@@ -28,9 +28,7 @@
   /*do we need the 984 x 615 as it is already that size by default?*/
 }
 
-
 @media screen and (max-width: 768px) {
-
   .lead__title {
     max-width: 720px;
     padding: 0 3.1% 0;
@@ -41,23 +39,22 @@
   }
   .lead__image {
     margin-top: 36px;
- 
 
     /*?how to keep image at 100% to next break point breaks around 490*/
   }
 }
-@media screen and (max-width: 570px) {/*check this is needed*/
-    .lead__title {
-        /* max-width: 288px; */
-        font-size: 65px; /*guessing font mid size*/
-        line-height: 1.1;
-      }
-      .lead__subtitle {
-        /* width: 288px; */
-        font-size: 24px;/*guessing mid point font size*/
-        /* margin: 16px 0 0; */
-      }
-    
+@media screen and (max-width: 570px) {
+  /*check this is needed*/
+  .lead__title {
+    /* max-width: 288px; */
+    font-size: 65px; /*guessing font mid size*/
+    line-height: 1.1;
+  }
+  .lead__subtitle {
+    /* width: 288px; */
+    font-size: 24px; /*guessing mid point font size*/
+    /* margin: 16px 0 0; */
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -77,5 +74,5 @@
   }
   .lead__image {
     margin-top: 40px;
-   
+  }
 }

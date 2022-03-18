@@ -1,2 +1,132 @@
 .places {
+  margin: 92px 10% 0;
+  border: 1px solid red;
+}
+
+.places__item {
+  display: grid;
+  /* grid-template-columns: 460px 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 460px));
+  grid-template-rows: auto 460px auto;
+  grid-gap: 48px 35px;
+  grid-template-areas:
+    "title artist"
+    "image description"
+    "link description";
+  margin-top: 80px;
+}
+
+.places__item:first-of-type {
+  margin-top: 0px;
+}
+.places__title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  margin: 0;
+  grid-area: title;
+}
+
+.places__artist {
+  align-self: end;
+  grid-area: artist;
+}
+.places__header {
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  margin: 0;
+}
+.places__artist-name {
+  font-size: 18px;
+  line-height: 1.22;
+  margin: 8px 0 0;
+}
+.places__image {
+  max-width: 460px;
+  max-height: 460px;
+  /*does this need width:100%*/
+  width: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+.places__description {
+  font-size: 18px;
+  line-height: 1.63;
+  grid-area: description;
+  max-width: 484px;
+}
+.places__text {
+  margin: 25px 0 0 0;
+}
+
+.places__text:first-of-type {
+  margin-top: 0;
+}
+.places__link {
+  background-color: #0278fe;
+  /* max-width: 248px*/
+  max-height: 48px;
+  width: 248px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  grid-area: link;
+  text-align: center;
+  padding: 13px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .places {
+    margin: 88px 24px 0;
+  }
+  .places__item {
+    grid-template-columns: 340px 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(1fr, 340px)); */
+    grid-template-rows: auto 340px auto;
+    margin-top: 72px;
+    grid-gap: 48px 28px;
+  }
+  .places__description {
+    font-size: 16px;
+  }
+  .places__image {
+    max-width: 340px;
+    max-height: 340px;
+  }
+  .places__title {
+    font-size: 42px;
+    line-height: 1.06;
+  }
+}
+@media screen and (max-width: 545px) {
+  .places {
+    /* margin: 62px 16px 0; */
+    margin: 62px 16px 0;
+  }
+  .places__item {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "description"
+      "link";
+    grid-row-gap: 25px;
+    margin-top: 50px;
+  }
+  .places__image {
+    max-width: 520px;
+    max-height: 320px;
+    /*does this need width:100%*/
+    width: 100%;
+    object-fit: cover;
+    grid-area: image;
+  }
 }
