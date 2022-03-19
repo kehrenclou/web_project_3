@@ -106,7 +106,8 @@
 @media screen and (max-width: 545px) {
   .places {
     /* margin: 62px 16px 0; */
-    margin: 62px 16px 0;
+    /* margin: 62px 16px 0; */
+    margin: 62px 0;
   }
   .places__item {
     grid-template-columns: 1fr;
@@ -122,11 +123,17 @@
     margin-top: 50px;
   }
   .places__image {
-    max-width: 520px;
+    max-width: 545px;
     max-height: 320px;
     /*does this need width:100%*/
     width: 100%;
     object-fit: cover;
     grid-area: image;
+  }
+  .places__title,
+  .places__artist,
+  .places__description,
+  .places__link {
+    margin: 0 16px 0;
   }
 }
