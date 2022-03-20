@@ -1,17 +1,10 @@
 .intro {
-  /* display: flex;
-  flex-direction: column; */
-  border: 1px solid red;
-
-  /* align-items: center; */
-  /* margin-left: 148px; */
-  margin: 12.8% auto 0;
-  /* margin-top: 92px; which to use percent or px */
-  padding-left: 11%;
+  margin-top: 92px;
+  padding-left: 100px;
+  max-width: 785px;
 }
 
 .intro__title {
-  max-width: 785px;
   margin: 0;
   font-weight: 900;
   font-size: 54px;
@@ -28,7 +21,7 @@
 }
 .intro__quote_author {
   position: relative;
-  text-align: right; /* still not aligning correctly*/
+  text-align: right;
   margin: 10px 0 0 0;
 }
 .intro__content {
@@ -40,27 +33,18 @@
   margin: 32px 0 0 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1088px) {
   .intro {
     margin: 88px auto 0;
-    padding: 0 3% 0;
+    padding: 0;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .intro {
-    margin: 64px auto 0;
-    padding: 0 5% 0;
+    margin: 64px 0 0;
   }
   .intro__title {
-    max-width: 288px;
     font-size: 32px;
-    line-height: 1.09;
-  }
-  .intro__quote {
-    max-width: 288px;
-  }
-  .intro__content {
-    max-width: 288px;
   }
 }

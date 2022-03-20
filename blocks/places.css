@@ -1,12 +1,13 @@
 .places {
-  margin: 92px 10% 0;
+  margin: 92px 0 0;
+  padding: 0 100px 0;
   border: 1px solid red;
 }
 
 .places__item {
   display: grid;
-  /* grid-template-columns: 460px 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 460px));
+  grid-template-columns: 460px 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); */
   grid-template-rows: auto 460px auto;
   grid-gap: 48px 35px;
   grid-template-areas:
@@ -47,7 +48,7 @@
 .places__image {
   max-width: 460px;
   max-height: 460px;
-  /*does this need width:100%*/
+
   width: 100%;
   object-fit: cover;
   grid-area: image;
@@ -67,7 +68,7 @@
 }
 .places__link {
   background-color: #0278fe;
-  /* max-width: 248px*/
+  border-radius: 4px;
   max-height: 48px;
   width: 248px;
   box-sizing: border-box;
@@ -79,10 +80,21 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
+  transition: background-color 0.25s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+.places__link:hover {
+  background-color: #0063d2;
+}
+
+@media screen and (max-width: 1190px) {
   .places {
-    margin: 88px 24px 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .places {
+    margin: 88px 0 0;
+    padding: 0;
   }
   .places__item {
     grid-template-columns: 340px 1fr;
@@ -103,11 +115,9 @@
     line-height: 1.06;
   }
 }
-@media screen and (max-width: 545px) {
+@media screen and (max-width: 634px) {
   .places {
-    /* margin: 62px 16px 0; */
-    /* margin: 62px 16px 0; */
-    margin: 62px 0;
+    margin: 62px 0 0;
   }
   .places__item {
     grid-template-columns: 1fr;
@@ -123,17 +133,20 @@
     margin-top: 50px;
   }
   .places__image {
-    max-width: 545px;
     max-height: 320px;
-    /*does this need width:100%*/
-    width: 100%;
+
     object-fit: cover;
     grid-area: image;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    width: 100vw;
+    max-width: 100vw;
   }
-  .places__title,
-  .places__artist,
-  .places__description,
+}
+@media screen and (max-width: 466px) {
   .places__link {
-    margin: 0 16px 0;
+    width: 288px;
+    margin-left: calc((100% - 288px) / 2);
   }
 }

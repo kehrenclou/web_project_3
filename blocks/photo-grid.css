@@ -1,14 +1,11 @@
 .photo-grid {
   margin: 118px 0 0;
-  padding: 0 3.5% 0;
 }
 .photo-grid__container {
-  max-width: 1184px; /*needs to be 1184  1190 works in testing*/
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   grid-gap: 16px;
-  /* border: 1px solid red;
-  background-color: yellow; */
+
   box-sizing: border-box;
 }
 .photo-grid__item {
@@ -20,22 +17,13 @@
 @media screen and (max-width: 768px) {
   .photo-grid {
     margin: 90px 0 0;
-    padding: 0 3% 0;
   }
   .photo-grid__container {
-    max-width: 720px; /*needs to be 1184  1190 works in testing*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
-    grid-gap: 16px;
-    box-sizing: border-box;
+    max-width: 720px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .photo-grid {
-    padding: 0 5% 0;
-  }
-
   .photo-grid__container {
     gap: 12px;
   }
