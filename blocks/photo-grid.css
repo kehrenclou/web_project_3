@@ -1,12 +1,14 @@
 .photo-grid {
   margin: 118px 0 0;
 }
-.photo-grid__container {
+.photo-grid__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   grid-gap: 16px;
-
+  list-style-type: none;
   box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
 }
 .photo-grid__item {
   height: 100%;
@@ -18,13 +20,13 @@
   .photo-grid {
     margin: 90px 0 0;
   }
-  .photo-grid__container {
+  .photo-grid__list {
     max-width: 720px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .photo-grid__container {
+  .photo-grid__list {
     gap: 12px;
   }
 }

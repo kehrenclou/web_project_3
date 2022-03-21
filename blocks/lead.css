@@ -9,7 +9,7 @@
   font-size: 96px;
   line-height: 1.04;
   /* or 104% or 100px*/
-  /* text-align: center; */
+
   margin: 0 auto;
 }
 .lead__subtitle {
@@ -18,7 +18,7 @@
   font-size: 30px;
   line-height: 1.2;
   /* or 120% 36px*/
-  /* text-align: center; */
+
   margin: 32px auto 0;
 }
 .lead__image {
