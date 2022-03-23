@@ -36,6 +36,13 @@
   .lead__image {
     margin-top: 36px;
     padding: 0;
+
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lead__image {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
