@@ -27,7 +27,7 @@
   margin: 64px auto 0;
   /* margin: 64px 148px 0; */
   box-sizing: border-box;
-  max-width: 984px;
+  /* max-width: 984px; */
   object-fit: contain;
   max-width: fit-content;
 }
