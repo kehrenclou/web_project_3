@@ -124,7 +124,7 @@
   .places__title,
   .places__artist,
   .places__text {
-    padding-left: 16px;
+    padding: 0 16px 0;
   }
 }
 @media screen and (max-width: 466px) {
