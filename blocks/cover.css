@@ -60,19 +60,14 @@
   .cover {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    min-height: 660px;
-  }
-}
-@media screen and (max-width: 634px) {
-  .cover {
-    min-height: 460px;
+    /* min-height: 660px; */
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 400px) {
   .cover {
     margin-top: 64px;
-    min-height: 320px;
+    min-height: 254px;
   }
   .cover__title {
     font-size: 32px;

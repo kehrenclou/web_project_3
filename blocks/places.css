@@ -78,7 +78,6 @@
 @media screen and (max-width: 1024px) {
   .places {
     margin: 88px 0 0;
-    padding: 0;
   }
   .places__item {
     grid-template-columns: 340px 1fr;
@@ -129,6 +128,10 @@
   }
 }
 @media screen and (max-width: 466px) {
+  .places__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
   .places__link {
     width: 288px;
     margin-left: calc((100% - 288px) / 2);
