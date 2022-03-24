@@ -1,5 +1,5 @@
 .photo-grid {
-  margin: 118px 0 0;
+  margin: 118px 48px 0;
 }
 .photo-grid__list {
   display: grid;
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 768px) {
   .photo-grid {
-    margin: 90px 0 0;
+    margin: 90px 24px 0;
   }
   .photo-grid__list {
     max-width: 720px;
@@ -26,6 +26,9 @@
 }
 
 @media screen and (max-width: 320px) {
+  .photo-grid {
+    margin: 90px 16px 0;
+  }
   .photo-grid__list {
     gap: 12px;
   }
